@@ -36,7 +36,7 @@ Tiene 4 endpoints para: crear, actualizar, obtener por id y listar
 ### 8️⃣ Testing Estratégico
 - Pruebas de integración reales utilizando SQL Server local.
 - Fixtures de test (`SqlServerFixture`) para levantar el contexto real de base de datos.
-- Stubs controlados para probar flujos completos (`DiscountStub`).
+- Se probo la logica con el command para crear y query para obtener por id
 
 ---
 
