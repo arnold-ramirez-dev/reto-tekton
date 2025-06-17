@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: reto_sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=admin_sql1
+    ports:
+      - "1443:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+    networks:
+      - reto_network
+
+volumes:
+  sqlserverdata:
+
+networks:
+  reto_network:
